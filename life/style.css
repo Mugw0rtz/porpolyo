@@ -1,0 +1,44 @@
+html{
+  height: 100%;
+}
+body{
+  display: flex;
+  justify-content: center;
+   background-image: url("wallpaper.png");
+   image-resolution: 50px;
+   height: 80%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+.container{
+  text-align: center;
+  margin:auto;
+  padding: 70px;
+}
+
+
+input{
+  height: 60px;
+  width: 150px;
+  border: none;
+  border-bottom: 2px solid silver;
+  text-align: center;
+}
+.p1{
+ /* margin-top: 70px;
+ margin-left: 13%; */
+ font-size: 30px; 
+ color: #F0FFFF;
+ background-color: #696969;
+ width:fit-content;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.p2{
+  text-align: center;
+  background-color: #4169E1;
+  width:fit-content;
+  margin-left: 20%;
+  color: #FFFAFA;
+}

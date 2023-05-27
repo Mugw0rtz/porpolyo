@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Your Life in Weeks</title>
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1 style="font-size: 65px;"> Your Life in Weeks</h1>
+      <p class="p2">“The past always looks better than it was. It’s only pleasant because it isn’t here.” – Finley Peter Dunne</p><br>
+      <!-- <label for="age1">Enter Your Age:</label> -->
+      <input type="number" id="age1" placeholder="Enter Your Age">
+      
+      <button type="button" class="btn btn-outline-dark btn-lg" id="btn">Calculate</button>
+      <br>
+
+      <p class="p1" id="output"></p>
+
+
+    </div>
+    <script type="text/javascript">
+      const yourage = document.getElementById("age1");
+      const btn1 = document.getElementById("btn");
+      const out = document.getElementById("output");
+
+      function fun1(){
+        age = yourage.value;
+        var daysLeft, weeksLeft, monthsLeft;
+    
+        daysLeft= (90 - age) * 365;
+        weeksLeft= (90 - age) * 52;
+        monthsLeft= (90 - age) * 12;
+    
+    
+        out.innerHTML = "You have " + daysLeft + " days, " + weeksLeft + " weeks, and " + monthsLeft + " months left.";
+
+      }
+      btn1.addEventListener('click', fun1);
+      
+
+    </script>
+    <!-- <footer class="pt-5 my-5 text-muted">
+      Created by Gonzales, Edmar &copy; 2023-4eber
+    </footer> -->
+  </body>
+</html>
